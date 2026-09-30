@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Think Mart</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="Home-Page.html" class="logo">Think<span>Mart</span></a>
+      <ul class="nav-links">
+        <li><a href="Home-Page.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Cart.html" class="active">Cart</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Your Shopping Cart</h1>
+
+    <div class="cart-layout">
+      <!-- Items Table -->
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="cart-item-info">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=100" alt="Laptop">
+                <span>Pro Laptop 15"</span>
+              </div>
+            </td>
+            <td>$899</td>
+            <td><input type="number" value="1" min="1" class="qty-input"></td>
+            <td>$899</td>
+            <td><button class="remove-btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-item-info">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100" alt="Headphones">
+                <span>Wireless Headphones</span>
+              </div>
+            </td>
+            <td>$149</td>
+            <td><input type="number" value="2" min="1" class="qty-input"></td>
+            <td>$298</td>
+            <td><button class="remove-btn">Remove</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <br>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span>$1,197</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span>$15</span>
+        </div>
+        <div class="summary-row">
+          <span>Tax</span>
+          <span>$10</span>
+        </div>
+        <div class="summary-row summary-total">
+          <span>Total</span>
+          <span>$1,222</span>
+        </div>
+        <br>
+        <button class="btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Think Mart. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
